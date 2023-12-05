@@ -32,7 +32,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = HueSaturationInterface.applyHueSaturation(inputImage, saturationAmount, hueAmount); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -244,7 +244,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = SharpenInterface.applySharpen(inputImage, amount); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 

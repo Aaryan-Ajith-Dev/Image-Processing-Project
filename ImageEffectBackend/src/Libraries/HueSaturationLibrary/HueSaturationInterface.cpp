@@ -55,8 +55,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
     // Call the function here
     // TODO
-
-
+    applyHueSaturation(imageVector, static_cast<float>(saturationValue), static_cast<float>(hueValue));
 
 
 
