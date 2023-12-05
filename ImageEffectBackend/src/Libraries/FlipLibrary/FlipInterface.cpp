@@ -55,8 +55,10 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
     // Call the function here
     // TODO
-
-
+    if(horizontalFlipValue)
+        applyHorizontalFlipEffect(imageVector);
+    if(verticalFlipValue)
+        applyVerticalFlipEffect(imageVector);
 
 
 

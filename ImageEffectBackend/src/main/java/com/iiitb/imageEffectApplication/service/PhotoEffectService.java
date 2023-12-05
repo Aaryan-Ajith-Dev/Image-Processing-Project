@@ -1,6 +1,7 @@
 package com.iiitb.imageEffectApplication.service;
 
 import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
+import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.utils.ProcessingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -114,7 +115,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = FlipInterface.applyFlip(inputImage, horizontalFlipValue, verticalFlipValue); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -181,7 +182,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = InvertInterface.applyInvert(inputImage); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
