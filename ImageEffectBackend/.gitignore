@@ -35,3 +35,5 @@ build/
 ### Makefile ###
 /Libraries/Makefile
 Makefile
+
+node_modules
