@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
+import com.iiitb.imageEffectApplication.libraryInterfaces.*;
+import main.java.com.iiitb.imageEffectApplication.effectImplementation.*;
+import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
+
 @Service
 public class PhotoEffectService {
 
@@ -28,7 +32,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = HueSaturationInterface.applyHueSaturation(inputImage, saturationAmount, hueAmount); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -75,8 +79,13 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            ContrastImplementation contrastImplementation = new ContrastImplementation();
+            contrastImplementation.setParameterValue(amount);
+
+            loggingService = new LoggingService();
+
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, "", loggingService); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -85,6 +94,12 @@ public class PhotoEffectService {
             return processingUtils.postProcessing(modifiedImage);
 
         } catch (IOException e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        catch (IllegalParameterException e)
+        {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -229,7 +244,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = SharpenInterface.applySharpen(inputImage, amount); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
