@@ -52,7 +52,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
 
 
-
+    imageVector = applyRotation(imageVector, value);
     // Call the function here
     // TODO
 

@@ -1,4 +1,4 @@
-package main.java.com.iiitb.imageEffectApplication.effectImplementation;
+package com.iiitb.imageEffectApplication.effectImplementation;
 
 import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.libraryInterfaces.ContrastInterface;

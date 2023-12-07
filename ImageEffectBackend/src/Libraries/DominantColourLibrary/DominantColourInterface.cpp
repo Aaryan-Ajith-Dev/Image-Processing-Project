@@ -1,11 +1,11 @@
-#include "com_iiitb_imageEffectApplication_libraryInterfaces_BrightnessInterface.h"
-#include "Brightness.h"
+#include "com_iiitb_imageEffectApplication_libraryInterfaces_DominantColourInterface.h"
+#include "DominantColour.h"
 #include "../Pixel.h"
 #include <vector>
 using namespace std;
 
-JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInterfaces_BrightnessInterface_applyBrightness
-  (JNIEnv * env, jclass jobj, jobjectArray image, jfloat amount) {
+JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInterfaces_DominantColourInterface_applyDominantColour
+  (JNIEnv * env, jclass jobj, jobjectArray image) {
 
     vector< vector<Pixel> > imageVector;
     jsize rows = env->GetArrayLength(image);
@@ -52,11 +52,10 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
 
 
-    applyBrightness(imageVector, amount);
+
     // Call the function here
     // TODO
 
-    
 
 
 
@@ -67,29 +66,28 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
 
 
-     int nrows = imageVector.size();
-        int ncols = imageVector[0].size();
-        jobjectArray resultArray = env->NewObjectArray(nrows, pixelArrayClass, nullptr);
 
-        for (jsize i = 0; i < nrows; ++i) {
-            jsize cols = imageVector[i].size();
-            jobjectArray rowArray = env->NewObjectArray(ncols, pixelClass, nullptr);
+    jobjectArray resultArray = env->NewObjectArray(rows, pixelArrayClass, nullptr);
 
-            for (jsize j = 0; j < ncols; ++j) {
-                const Pixel &pixel = imageVector[i][j];
-                jobject pixelObj = env->AllocObject(pixelClass);
+    for (jsize i = 0; i < rows; ++i) {
+        jsize cols = imageVector[i].size();
+        jobjectArray rowArray = env->NewObjectArray(cols, pixelClass, nullptr);
 
-                env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "r", "I"), pixel.r);
-                env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "g", "I"), pixel.g);
-                env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "b", "I"), pixel.b);
+        for (jsize j = 0; j < cols; ++j) {
+            const Pixel &pixel = imageVector[i][j];
+            jobject pixelObj = env->AllocObject(pixelClass);
 
-                env->SetObjectArrayElement(rowArray, j, pixelObj);
-                env->DeleteLocalRef(pixelObj);
-            }
+            env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "r", "I"), pixel.r);
+            env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "g", "I"), pixel.g);
+            env->SetIntField(pixelObj, env->GetFieldID(pixelClass, "b", "I"), pixel.b);
 
-            env->SetObjectArrayElement(resultArray, i, rowArray);
-            env->DeleteLocalRef(rowArray);
+            env->SetObjectArrayElement(rowArray, j, pixelObj);
+            env->DeleteLocalRef(pixelObj);
         }
 
-        return resultArray;
+        env->SetObjectArrayElement(resultArray, i, rowArray);
+        env->DeleteLocalRef(rowArray);
+    }
+
+    return resultArray;
 }
