@@ -13,13 +13,16 @@ public class ContrastImplementation implements SingleValueParameterizableEffect
 
     public void setParameterValue(float amount) throws IllegalParameterException
     {
+        if (amount < 0 || amount > 200)
+            throw new IllegalParameterException("Illegal parameter for Contrast effect");
+
         this.amount = amount;
     }
 
     public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService)
     {
-        return ContrastInterface.applyContrast(image, amount);
+        loggingService.addLog(fileName, "Contrast", Float.toString(amount));
 
-        /* Code to write logs */
+        return ContrastInterface.applyContrast(image, amount);
     }
 }
