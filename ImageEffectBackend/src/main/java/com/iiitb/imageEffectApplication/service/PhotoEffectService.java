@@ -86,7 +86,8 @@ public class PhotoEffectService {
             loggingService = new LoggingService();
 
             // TODO
-            Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, "", loggingService); // Replace this with actual modified image
+            Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService); // Replace this with actual modified image
+            loggingService.addLog(imageName, "Contrast", Float.toString(amount));
 
             // ACTUAL WORK ENDS HERE
 
