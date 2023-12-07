@@ -1,7 +1,9 @@
 #include "Contrast.h"
+#define scale 50
 
 void contrastEffect(vector<vector<Pixel>>& imageVector, float amount)
 {
+    amount = amount / scale;
     for (int i = 0; i < imageVector.size(); ++i)
     {
         for (int j = 0; j < imageVector[0].size(); ++j)

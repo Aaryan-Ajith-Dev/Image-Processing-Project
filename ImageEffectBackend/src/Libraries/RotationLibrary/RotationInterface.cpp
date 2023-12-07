@@ -62,7 +62,6 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
 
 
-
     int nrows = imageVector.size();
     int ncols = imageVector[0].size();
     jobjectArray resultArray = env->NewObjectArray(nrows, pixelArrayClass, nullptr);
