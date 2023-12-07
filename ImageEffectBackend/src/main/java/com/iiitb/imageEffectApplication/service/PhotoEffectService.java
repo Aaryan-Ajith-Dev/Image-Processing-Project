@@ -1,6 +1,5 @@
 package com.iiitb.imageEffectApplication.service;
 
-import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.utils.ProcessingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,9 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 import com.iiitb.imageEffectApplication.libraryInterfaces.*;
-import main.java.com.iiitb.imageEffectApplication.effectImplementation.*;
+import com.iiitb.imageEffectApplication.effectImplementation.*;
+
+import com.iiitb.imageEffectApplication.effectImplementation.ContrastImplementation;
 import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
 
 @Service
@@ -56,7 +57,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = BrightnessInterface.applyBrightness(inputImage, amount);; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
