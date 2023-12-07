@@ -1,6 +1,5 @@
 package com.iiitb.imageEffectApplication.service;
 
-import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.utils.ProcessingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,7 +11,6 @@ import java.io.IOException;
 import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.effectImplementation.*;
 
-import com.iiitb.imageEffectApplication.effectImplementation.ContrastImplementation;
 import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
 
 @Service
