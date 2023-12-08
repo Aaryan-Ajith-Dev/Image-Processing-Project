@@ -1,1 +1,3 @@
 node_modules
+/.vscode
+ImageEffectBackend/src/main/java/com/iiitb/imageEffectApplication/libraryInterfaces/*.class

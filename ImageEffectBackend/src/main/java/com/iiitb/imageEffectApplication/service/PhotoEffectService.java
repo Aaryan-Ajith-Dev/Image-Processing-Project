@@ -1,6 +1,5 @@
 package com.iiitb.imageEffectApplication.service;
 
-import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.utils.ProcessingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
-import com.iiitb.imageEffectApplication.effectImplementation.Grayscale;
+
+import com.iiitb.imageEffectApplication.libraryInterfaces.*;
+import com.iiitb.imageEffectApplication.effectImplementation.*;
+
+import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
+
 @Service
 public class PhotoEffectService {
 
@@ -75,7 +79,8 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            ContrastImplementation contrastImplementation=new ContrastImplementation();
+            Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -123,7 +128,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = GaussianBlurInterface.applyGaussianBlur(inputImage, radius); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -211,7 +216,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = SepiaInterface.applySepia(inputImage); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
