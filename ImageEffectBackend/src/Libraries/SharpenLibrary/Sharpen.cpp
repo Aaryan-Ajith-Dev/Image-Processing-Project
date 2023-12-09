@@ -1,5 +1,6 @@
 #include "Sharpen.h"
 #include <bits/stdc++.h>
+#define factor 1
 
 using namespace std;
 
@@ -12,9 +13,9 @@ void applySharpness(vector<vector<Pixel>>& image, float amount) {
     const int m = image[0].size();
 
     const int kernelSize = 3;
-    int kernel[kernelSize][kernelSize] = {{-1, -1, -1}, {-1, 8, -1}, {-1, -1, -1}};
+    int kernel[kernelSize][kernelSize] = {{0, -1, 0}, {-1, 4, -1}, {0, -1, 0}};
 
-    const float scalingFactor = amount;
+    const float scalingFactor = amount*factor;
 
     vector<vector<Pixel>> tempImage(image);
 
