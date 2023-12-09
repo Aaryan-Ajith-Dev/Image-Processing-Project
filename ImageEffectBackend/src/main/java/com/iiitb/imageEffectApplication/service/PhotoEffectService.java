@@ -79,7 +79,9 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            ContrastImplementation contrastImplementation=new ContrastImplementation();
+            ContrastImplementation contrastImplementation = new ContrastImplementation();
+            contrastImplementation.setParameterValue(amount);
+
             Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
@@ -91,6 +93,14 @@ public class PhotoEffectService {
         } catch (IOException e) {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        catch (IllegalParameterException e)
+        {
+            System.out.println("Illegal parameter for Contrast Effect");
+            e.printStackTrace();
+
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);    
         }
     }
 
