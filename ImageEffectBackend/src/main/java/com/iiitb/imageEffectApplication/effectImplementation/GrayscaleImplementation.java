@@ -3,7 +3,7 @@ package com.iiitb.imageEffectApplication.effectImplementation;
 import com.iiitb.imageEffectApplication.baseEffects.PhotoEffect;
 import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.service.LoggingService;
-import com.iiitb.imageEffectApplication.libraryInterfaces.GrayscaleInterfaces;
+import com.iiitb.imageEffectApplication.libraryInterfaces.GrayscaleInterface;
 
 class DoGrayscale extends Thread{
     private Pixel[][] image;
@@ -45,7 +45,7 @@ class DoLogging extends Thread{
 }
 
 
-public class Grayscale implements PhotoEffect{
+public class GrayscaleImplementation implements PhotoEffect{
     public Pixel[][] apply(Pixel[][] image, String filename, LoggingService loggingService){
         DoGrayscale dg = new DoGrayscale(image);
         DoLogging dl = new DoLogging(image, filename, loggingService);

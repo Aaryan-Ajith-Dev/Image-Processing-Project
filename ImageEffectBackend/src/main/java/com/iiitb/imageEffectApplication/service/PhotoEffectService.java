@@ -162,7 +162,7 @@ public class PhotoEffectService {
 
             // TODO
             //input image is a pixel array
-            Grayscale gsc = new Grayscale();
+            GrayscaleImplementation gsc = new GrayscaleImplementation();
             LoggingService loggingService1 = new LoggingService();
             Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService1); // Replace this with actual modified image
             
