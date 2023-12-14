@@ -1,6 +1,5 @@
 package com.iiitb.imageEffectApplication.service;
 
-import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.utils.ProcessingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,7 +11,6 @@ import java.io.IOException;
 import com.iiitb.imageEffectApplication.libraryInterfaces.*;
 import com.iiitb.imageEffectApplication.effectImplementation.*;
 
-import com.iiitb.imageEffectApplication.effectImplementation.ContrastImplementation;
 import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
 
 @Service
@@ -33,7 +31,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = HueSaturationInterface.applyHueSaturation(inputImage, saturationAmount, hueAmount); // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -57,7 +55,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = BrightnessInterface.applyBrightness(inputImage, amount);; // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -80,12 +78,10 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            // TODO
             ContrastImplementation contrastImplementation = new ContrastImplementation();
             contrastImplementation.setParameterValue(amount);
 
-            loggingService = new LoggingService();
-
-            // TODO
             Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
@@ -101,8 +97,10 @@ public class PhotoEffectService {
 
         catch (IllegalParameterException e)
         {
+            System.out.println("Illegal parameter for Contrast Effect");
             e.printStackTrace();
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);    
         }
     }
 
@@ -116,7 +114,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = FlipInterface.applyFlip(inputImage, horizontalFlipValue, verticalFlipValue); // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -163,8 +161,11 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
-
+            //input image is a pixel array
+            GrayscaleImplementation gsc = new GrayscaleImplementation();
+            LoggingService loggingService1 = new LoggingService();
+            Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService1); // Replace this with actual modified image
+            
             // ACTUAL WORK ENDS HERE
 
             return processingUtils.postProcessing(modifiedImage);
@@ -183,7 +184,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = InvertInterface.applyInvert(inputImage); // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -204,7 +205,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = RotationInterface.applyRotation(inputImage, value); // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -245,7 +246,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = SharpenInterface.applySharpen(inputImage, amount); // Replace this with actual modified image
+            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
@@ -265,7 +266,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             // TODO
-            Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
+            Pixel[][] modifiedImage = DominantColourInterface.applyDominantColour(inputImage); // Replace this with actual modified image
 
             // ACTUAL WORK ENDS HERE
 
