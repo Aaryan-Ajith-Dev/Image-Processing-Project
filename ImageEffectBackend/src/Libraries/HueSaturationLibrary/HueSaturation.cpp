@@ -163,7 +163,7 @@ void applyHueSaturation(vector< vector<Pixel> > &image, float saturationValue, f
     for (int i = 0; i < n;i++)
         for (int j = 0; j < m;j++){
             vector<double> hsv = rgb_to_hsv(image[i][j].r, image[i][j].g, image[i][j].b);
-            // hsv[0] = hueValue*scale;
+            // hsv[0] += hueValue*scale;
             hsv[1] = saturationValue/50;
             vector<double> rgb = hsv_to_rgb(hsv[0], hsv[1], hsv[2]);
             int factor = hsv[2];
