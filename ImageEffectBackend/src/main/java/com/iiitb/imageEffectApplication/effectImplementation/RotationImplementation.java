@@ -15,7 +15,7 @@ public class RotationImplementation implements SingleValueDiscreteEffect {
         this.value=parameterValue;
     }
     public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService){
-        loggingService.addLog(fileName, "Rotation", Integer.toString(value));
+        loggingService.addLog(fileName, "Rotation", Integer.toString(value*90));
         return RotationInterface.applyRotation(image, value);
     }
 }

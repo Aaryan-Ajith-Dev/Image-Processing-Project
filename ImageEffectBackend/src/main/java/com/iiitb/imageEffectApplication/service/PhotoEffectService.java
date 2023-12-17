@@ -258,9 +258,9 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
-            ShapenImplementation shapenImplementation=new ShapenImplementation();
-            shapenImplementation.setParameterValue(amount);
-            Pixel[][] modifiedImage = shapenImplementation.apply(inputImage, imageName, loggingService);
+            SharpenImplementation sharpenImplementation=new SharpenImplementation();
+            sharpenImplementation.setParameterValue(amount);
+            Pixel[][] modifiedImage = sharpenImplementation.apply(inputImage, imageName, loggingService);
 
             // ACTUAL WORK ENDS HERE
 
