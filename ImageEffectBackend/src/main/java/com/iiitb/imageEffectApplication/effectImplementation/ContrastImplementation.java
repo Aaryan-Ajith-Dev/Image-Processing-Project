@@ -5,7 +5,6 @@ import com.iiitb.imageEffectApplication.libraryInterfaces.ContrastInterface;
 import com.iiitb.imageEffectApplication.baseEffects.SingleValueParameterizableEffect;
 import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
 import com.iiitb.imageEffectApplication.service.LoggingService;
-import com.iiitb.imageEffectApplication.model.LogModel;
 
 public class ContrastImplementation implements SingleValueParameterizableEffect
 {

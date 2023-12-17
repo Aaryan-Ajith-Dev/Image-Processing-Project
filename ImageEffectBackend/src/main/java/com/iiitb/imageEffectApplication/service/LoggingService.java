@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import java.io.File;
 import java.io.FileReader;
@@ -24,7 +23,6 @@ public class LoggingService {
 
         try
         {
-            File logFile = new File("logfile.txt");
 
             FileWriter fileWriter = new FileWriter("logfile.txt", true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -69,6 +67,7 @@ public class LoggingService {
                 LogModel logModel = new LogModel(timestamp, fileName, effectName, optionValues);
                 allLogs.add(logModel);
             }
+            bufferedReader.close();
         }
 
         catch (IOException e)
@@ -107,6 +106,7 @@ public class LoggingService {
                     logsByEffect.add(logModel);
                 }
             }
+            bufferedReader.close();
         }
 
         catch (IOException e)
@@ -114,7 +114,6 @@ public class LoggingService {
             System.out.println("Error occurred while reading log file.");
             System.out.println(e);
         }
-
         return logsByEffect;
     }
 
@@ -163,6 +162,7 @@ public class LoggingService {
                     logsBetweenTimestamps.add(logModel);
                 }
             }
+            bufferedReader.close();
         }
 
         catch (IOException e)
