@@ -19,27 +19,39 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
         return;
     }
 
-    // Calculate Gaussian kernel coefficients
     vector<float> kernel(kernelSize);
-    int sigma = kernelSize / 2;
+    float sigma = kernelSize / 2;
     float sum = 0.0;
-    for (int x = 0; x < kernelSize; ++x) {
+    for (int x = 0; x < kernelSize; x++) {
         kernel[x] = exp(-(x - sigma) * (x - sigma) / (2 * sigma * sigma));
         sum += kernel[x];
     }
 
-    // Normalize the coefficients
-    for (float& coeff : kernel) {
-        coeff /= sum;
-    }
+    for (int i = 0; i < kernelSize; i++)
+        kernel[i] /= sum;
 
-    // Apply separable horizontal blur
     vector<vector<Pixel>> tempImage(image);
-    for (int i = 0; i < n; ++i) {
-        for (int j = kernelSize / 2; j < m - kernelSize / 2; ++j) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
             float rtotal = 0.0, gtotal = 0.0, btotal = 0.0;
 
-            for (int x = 0; x < kernelSize; ++x) {
+            if( j < kernelSize / 2){
+                for (int x = kernelSize/2 - j; x < kernelSize; x++){
+                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r;
+                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g;
+                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b;
+                }
+            } else if(j >= m-kernelSize / 2){
+                for (int x = 0; x < m + kernelSize/2 - j; x++){
+                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r;
+                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g;
+                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b;
+                }
+            } else
+            for (int x = 0; x < kernelSize; x++)
+            {
                 rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r;
                 gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g;
                 btotal += kernel[x] * image[i][j + x - kernelSize / 2].b;
@@ -51,12 +63,25 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
         }
     }
 
-    // Apply separable vertical blur
-    for (int i = kernelSize / 2; i < n - kernelSize / 2; ++i) {
-        for (int j = 0; j < m; ++j) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             float rtotal = 0.0, gtotal = 0.0, btotal = 0.0;
 
-            for (int y = 0; y < kernelSize; ++y) {
+            if( i < kernelSize / 2){
+                for (int y = kernelSize/2 - i; y < kernelSize; y++){
+                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r;
+                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g;
+                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b;
+                }
+            }
+            else if(i >= n - kernelSize / 2){
+                for (int y = 0; y < n + kernelSize/2 - i; y++){
+                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r;
+                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g;
+                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b;
+                }
+            } else 
+            for (int y = 0; y < kernelSize; y++) {
                 rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r;
                 gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g;
                 btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b;
