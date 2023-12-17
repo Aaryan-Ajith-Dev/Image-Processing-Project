@@ -4,6 +4,6 @@
 #include <vector>
 using namespace std;
 
-vector<vector<Pixel>> applyRotation( vector<vector<Pixel>>& image, int value);
+void applyRotation( vector<vector<Pixel>>& image, int value);
 
 #endif

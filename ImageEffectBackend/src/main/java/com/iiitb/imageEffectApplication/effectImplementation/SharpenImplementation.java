@@ -10,12 +10,12 @@ public class SharpenImplementation implements SingleValueParameterizableEffect {
     private float amount;
     public void setParameterValue(float amount) throws IllegalParameterException{
         if(amount<0 || amount>200){
-            throw new IllegalParameterException("Illegal parameter for Shapen effect");
+            throw new IllegalParameterException("Illegal parameter for Sharpen effect");
         }
         this.amount=amount;
     }
     public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService){
-        loggingService.addLog(fileName,"Shapen",Float.toString(amount));
+        loggingService.addLog(fileName,"Sharpen",Float.toString(amount));
         return SharpenInterface.applySharpen(image, amount);
     }
     
