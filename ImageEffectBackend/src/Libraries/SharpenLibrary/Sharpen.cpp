@@ -21,7 +21,7 @@ void applySharpness(vector<vector<Pixel>>& image, float amount) {
 
     for (int i = 1; i < n - 1; ++i) {
         for (int j = 1; j < m - 1; ++j) {
-            int rtotal = 0, gtotal = 0, btotal = 0;
+            float rtotal = 0, gtotal = 0, btotal = 0;
 
             for (int x = 0; x < kernelSize; ++x) {
                 for (int y = 0; y < kernelSize; ++y) {
