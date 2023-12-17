@@ -9,7 +9,7 @@ public class HueSaturationImplementation implements ParameterizableEffect {
     private float hueAmount;
     private float saturationAmount;
     public void setParameter(String paramName,float value) throws IllegalParameterException{
-        if((!paramName.equals("Hue") && paramName.equals("Saturation"))|| value<0 || value>200){
+        if((!paramName.equals("Hue") && !paramName.equals("Saturation"))|| value<0 || value>200){
             throw new IllegalParameterException("Illegal paramter for HueSaturation effect");
         }
         if(paramName.equals("Hue")){
