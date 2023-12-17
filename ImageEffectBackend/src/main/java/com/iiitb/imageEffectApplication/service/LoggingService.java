@@ -107,6 +107,7 @@ public class LoggingService {
                     logsByEffect.add(logModel);
                 }
             }
+            bufferedReader.close();
         }
 
         catch (IOException e)
@@ -114,7 +115,6 @@ public class LoggingService {
             System.out.println("Error occurred while reading log file.");
             System.out.println(e);
         }
-
         return logsByEffect;
     }
 

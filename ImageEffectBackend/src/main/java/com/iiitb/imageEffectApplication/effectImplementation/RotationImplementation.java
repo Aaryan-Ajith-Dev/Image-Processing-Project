@@ -9,7 +9,7 @@ import com.iiitb.imageEffectApplication.service.LoggingService;
 public class RotationImplementation implements SingleValueDiscreteEffect {
     private int value;
     public void setParameterValue(int parameterValue) throws IllegalParameterException{
-        if(parameterValue<1 || parameterValue>4){
+        if(parameterValue<0 || parameterValue>3){
             throw new IllegalParameterException("Illegal parameter for Rotation effect");
         }
         this.value=parameterValue;

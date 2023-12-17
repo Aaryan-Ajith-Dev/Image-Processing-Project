@@ -9,7 +9,7 @@ public class FlipImplementation implements DiscreteEffect {
     private int horizontalFlipValue;
     private int verticalFlipValue;
     public void selectOptionValue(String optionName,int value) throws IllegalParameterException{
-        if((!optionName.equals("horizontalFlipValue") && !optionName.equals("verticalFlipValue"))||(value!=1 && value!=0)){
+        if(value<0 || value>1){
             throw new IllegalParameterException("Illegal option for Flip effect");
         }
         if(optionName.equals("horizontalFlipValue")){

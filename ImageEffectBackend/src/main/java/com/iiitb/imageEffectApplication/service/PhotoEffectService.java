@@ -120,7 +120,7 @@ public class PhotoEffectService {
             // ACTUAL WORK STARTS HERE
 
             FlipImplementation flipImplementation=new FlipImplementation();
-            flipImplementation.selectOptionValue("vertcalFlipValue", verticalFlipValue);
+            flipImplementation.selectOptionValue("verticalFlipValue", verticalFlipValue);
             flipImplementation.selectOptionValue("horizontalFlipValue", horizontalFlipValue);
             Pixel[][] modifiedImage = flipImplementation.apply(inputImage, imageName, loggingService);
 
