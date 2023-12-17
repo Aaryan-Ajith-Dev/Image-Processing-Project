@@ -6,7 +6,7 @@ import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.libraryInterfaces.SharpenInterface;
 import com.iiitb.imageEffectApplication.service.LoggingService;
 
-public class ShapenImplementation implements SingleValueParameterizableEffect {
+public class SharpenImplementation implements SingleValueParameterizableEffect {
     private float amount;
     public void setParameterValue(float amount) throws IllegalParameterException{
         if(amount<0 || amount>200){
