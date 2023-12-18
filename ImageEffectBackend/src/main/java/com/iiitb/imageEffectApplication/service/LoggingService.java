@@ -27,7 +27,7 @@ public class LoggingService {
             FileWriter fileWriter = new FileWriter("logfile.txt", true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            bufferedWriter.write(fileName + " " + effectName + " " + optionValues + " " + currentTime);
+            bufferedWriter.write(fileName + "::" + effectName + "::" + optionValues + "::" + currentTime);
             bufferedWriter.newLine();
 
             bufferedWriter.close();
@@ -58,12 +58,12 @@ public class LoggingService {
 
             while ((line = bufferedReader.readLine()) != null)
             {
-                String sp[] = line.split(" ");
+                String sp[] = line.split("::");
                 String fileName = sp[0];
                 String effectName = sp[1];
                 String optionValues = sp[2];
                 String timestamp = sp[3];
-
+                
                 LogModel logModel = new LogModel(timestamp, fileName, effectName, optionValues);
                 allLogs.add(logModel);
             }
@@ -94,7 +94,7 @@ public class LoggingService {
 
             while ((line = bufferedReader.readLine()) != null)
             {
-                String sp[] = line.split(" ");
+                String sp[] = line.split("::");
                 String fileName = sp[0];
                 String effect = sp[1];
                 String optionValues = sp[2];
@@ -148,7 +148,7 @@ public class LoggingService {
 
             while ((line = bufferedReader.readLine()) != null)
             {
-                String sp[] = line.split(" ");
+                String sp[] = line.split("::");
                 String fileName = sp[0];
                 String effectName = sp[1];
                 String optionValues = sp[2];
