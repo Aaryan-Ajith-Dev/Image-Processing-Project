@@ -58,7 +58,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
 
 
-    dominantColourEffect(imageVector);
+    dominantColourEffect(imageVector); // Call the function to apply the effect
 
 
 

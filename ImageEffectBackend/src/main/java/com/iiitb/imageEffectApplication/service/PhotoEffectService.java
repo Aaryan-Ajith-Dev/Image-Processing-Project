@@ -87,9 +87,11 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            // Create ContrastImplementation object and set the parameter value
             ContrastImplementation contrastImplementation = new ContrastImplementation();
             contrastImplementation.setParameterValue(amount);
 
+            // Call the apply method to apply contrast effect
             Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService);
 
             // ACTUAL WORK ENDS HERE
@@ -283,7 +285,10 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            // Create DominantColourImplementation object
             DominantColourImplementation dominantColourImplementation=new DominantColourImplementation();
+            
+            // Modified image
             Pixel[][] modifiedImage = dominantColourImplementation.apply(inputImage, imageName, loggingService); 
 
             // ACTUAL WORK ENDS HERE
