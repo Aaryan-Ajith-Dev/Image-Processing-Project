@@ -23,3 +23,4 @@ RubixCube.jpg Contrast 187.0 2023-12-17T16:31:19.091289583
 RubixCube.jpg Contrast 200.0 2023-12-17T16:31:22.125572358
 RubixCube.jpg Sepia None 2023-12-17T16:31:31.468772714
 RubixCube.jpg Invert None 2023-12-17T16:31:44.983172428
+imgonline-com-ua-ColorPalette-BwxGkvimwV1PgTz.jpg DominantColour None 2023-12-17T18:26:27.025444609
