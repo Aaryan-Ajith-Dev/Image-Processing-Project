@@ -3,6 +3,7 @@
 using namespace std;
 
 void applySepia(vector<vector<Pixel>>& image){
+    // for each pixel in the pixel array set the pixel values to a new pixel value using the sepia formula
     for(int i=0;i<image.size();i++)
         for(int j =0;j<image[i].size();j++){
             int tr = (int)(image[i][j].r*0.393+image[i][j].g*0.769+image[i][j].b*0.189);
