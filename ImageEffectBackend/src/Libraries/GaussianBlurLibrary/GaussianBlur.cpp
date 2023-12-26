@@ -19,6 +19,10 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
     // size of matrix to convolve with
     int kernelSize = static_cast<int>(2 * radius + 1);
 
+    if (kernelSize <= 1){
+        return;
+    }
+
     /*
         Here the kernel is a matrix kernel[x][y] = fx*fy where fx and fy are normal distributions
         we can use this fact to do the convolution (typically O(n^4)) in terms of 2 independent convolutions
@@ -47,6 +51,11 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
         sum += kernel[x];
     }
 
+    float prefixSumArray[kernelSize] = {kernel[0]};
+    for (int x = 1; x < kernelSize; x++){
+        prefixSumArray[x] = kernel[x] + prefixSumArray[x-1];
+    }
+
     // normalising the kernel
     for (int i = 0; i < kernelSize; i++)
         kernel[i] /= sum;
@@ -60,17 +69,18 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
         {
             float rtotal = 0.0, gtotal = 0.0, btotal = 0.0;
 
+            // adjusts blurring at boundaries and appropriatly normalising the kernel
             if( j < kernelSize / 2){
                 for (int x = kernelSize/2 - j; x < kernelSize; x++){
-                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r;
-                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g;
-                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b;
+                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r * sum / prefixSumArray[j + kernelSize / 2];
+                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g * sum / prefixSumArray[j + kernelSize / 2];
+                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b * sum / prefixSumArray[j + kernelSize / 2];
                 }
             } else if(j >= m-kernelSize / 2){
                 for (int x = 0; x < m + kernelSize/2 - j; x++){
-                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r;
-                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g;
-                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b;
+                    rtotal += kernel[x] * image[i][j + x - kernelSize / 2].r * sum / prefixSumArray[m - j - 1 + kernelSize / 2];
+                    gtotal += kernel[x] * image[i][j + x - kernelSize / 2].g * sum / prefixSumArray[m - j - 1 + kernelSize / 2];
+                    btotal += kernel[x] * image[i][j + x - kernelSize / 2].b * sum / prefixSumArray[m - j - 1 + kernelSize / 2];
                 }
             } else
             for (int x = 0; x < kernelSize; x++)
@@ -90,19 +100,19 @@ void applyGaussianBlur(vector<vector<Pixel>>& image, float radius) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             float rtotal = 0.0, gtotal = 0.0, btotal = 0.0;
-
+            // adjusts blurring at boundaries and appropriatly normalising the kernel
             if( i < kernelSize / 2){
                 for (int y = kernelSize/2 - i; y < kernelSize; y++){
-                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r;
-                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g;
-                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b;
+                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r * sum / prefixSumArray[i + kernelSize / 2];
+                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g * sum / prefixSumArray[i + kernelSize / 2];
+                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b * sum / prefixSumArray[i + kernelSize / 2];
                 }
             }
             else if(i >= n - kernelSize / 2){
                 for (int y = 0; y < n + kernelSize/2 - i; y++){
-                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r;
-                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g;
-                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b;
+                    rtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].r * sum / prefixSumArray[n - i - 1 + kernelSize / 2];
+                    gtotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].g * sum / prefixSumArray[n - i - 1 + kernelSize / 2];
+                    btotal += kernel[y] * tempImage[i + y - kernelSize / 2][j].b * sum / prefixSumArray[n - i - 1 + kernelSize / 2];
                 }
             } else 
             for (int y = 0; y < kernelSize; y++) {
