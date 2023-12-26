@@ -1,0 +1,224 @@
+dog.jpg::Sharpen::50.0::2023-12-25T16:25:39.839782568
+dog.jpg::Sharpen::10.0::2023-12-25T16:25:44.193513327
+dog.jpg::Sharpen::1.0::2023-12-25T16:25:46.340594341
+result_image (5).png::Sharpen::50.0::2023-12-25T16:29:39.681891111
+result_image (2).png::Sharpen::50.0::2023-12-25T16:29:45.022635393
+result_image.png::Sharpen::50.0::2023-12-25T16:29:49.375314186
+result_image.png::Sharpen::88.0::2023-12-25T16:29:52.806401059
+result_image.png::Sharpen::100.0::2023-12-25T16:29:55.936172555
+result_image.png::Sharpen::50.0::2023-12-25T16:31:40.379967120
+result_image.png::Sharpen::100.0::2023-12-25T16:31:43.736938427
+test_ultimate1.jpg::Sharpen::49.0::2023-12-25T16:33:17.832552746
+test_ultimate1.jpg::Sharpen::73.0::2023-12-25T16:33:27.937577408
+test_ultimate1.jpg::Sharpen::100.0::2023-12-25T16:33:54.303168152
+test_ultimate1.jpg::GaussianBlur::31.0::2023-12-25T16:34:57.014549169
+test_ultimate1.jpg::GrayScale::None::2023-12-25T16:35:34.757070810
+test_ultimate1.jpg::Brightness::154.0::2023-12-25T16:35:50.343178068
+test_ultimate1.jpg::Brightness::87.0::2023-12-25T16:35:53.458258857
+test_ultimate1.jpg::Brightness::40.0::2023-12-25T16:35:56.930834835
+download.jpg::Sharpen::50.0::2023-12-25T16:50:35.835404924
+download.jpg::Sharpen::75.0::2023-12-25T16:50:38.955459722
+download.jpg::Sharpen::98.0::2023-12-25T16:50:41.069309645
+download.jpg::Sharpen::62.0::2023-12-25T16:50:42.799980387
+download.jpg::Sharpen::40.0::2023-12-25T16:50:44.891089571
+test_ultimate1.jpg::HueSaturation::0.0 100.0::2023-12-25T16:51:43.724285685
+test_ultimate1.jpg::HueSaturation::0.0 53.0::2023-12-25T16:52:09.004134455
+test_ultimate1.jpg::HueSaturation::0.0 81.0::2023-12-25T16:52:17.346796014
+test_ultimate1.jpg::HueSaturation::33.0 81.0::2023-12-25T16:52:21.378378992
+test_ultimate1.jpg::HueSaturation::79.0 81.0::2023-12-25T16:52:26.933761243
+test_ultimate1.jpg::HueSaturation::100.0 81.0::2023-12-25T16:52:33.795306358
+test_ultimate1.jpg::HueSaturation::57.0 81.0::2023-12-25T16:52:40.413806593
+test_ultimate1.jpg::HueSaturation::28.0 81.0::2023-12-25T16:52:45.467722179
+test_ultimate1.jpg::HueSaturation::12.0 81.0::2023-12-25T16:52:51.476943671
+test_ultimate1.jpg::HueSaturation::98.0 81.0::2023-12-25T16:52:56.099641620
+test_ultimate1.jpg::HueSaturation::98.0 81.0::2023-12-25T16:54:53.539376257
+test_ultimate1.jpg::HueSaturation::74.0 81.0::2023-12-25T16:55:09.578971952
+test_ultimate1.jpg::HueSaturation::41.0 81.0::2023-12-25T16:55:25.100803899
+test_ultimate1.jpg::HueSaturation::55.0 81.0::2023-12-25T16:55:32.155479211
+test_ultimate1.jpg::HueSaturation::21.0 81.0::2023-12-25T16:55:38.638941097
+result_image (4).png::HueSaturation::0.0 100.0::2023-12-25T16:56:58.262336686
+result_image (4).png::HueSaturation::0.0 37.0::2023-12-25T16:57:00.410408811
+result_image (4).png::HueSaturation::0.0 21.0::2023-12-25T16:57:02.427223329
+result_image (4).png::HueSaturation::22.0 21.0::2023-12-25T16:57:04.297947364
+result_image (4).png::HueSaturation::36.0 21.0::2023-12-25T16:57:06.491824039
+result_image (4).png::HueSaturation::36.0 48.0::2023-12-25T16:57:08.861324635
+result_image (4).png::HueSaturation::36.0 70.0::2023-12-25T16:57:10.750679774
+result_image (4).png::HueSaturation::51.0 70.0::2023-12-25T16:57:12.917226735
+result_image (4).png::HueSaturation::77.0 70.0::2023-12-25T16:57:15.026721013
+result_image (4).png::HueSaturation::31.0 70.0::2023-12-25T16:57:16.875746191
+result_image (4).png::HueSaturation::13.0 70.0::2023-12-25T16:57:18.453453847
+result_image (4).png::HueSaturation::13.0 83.0::2023-12-25T16:57:20.269346977
+result_image (4).png::HueSaturation::78.0 83.0::2023-12-25T16:57:37.859059865
+result_image (4).png::HueSaturation::58.0 83.0::2023-12-25T16:57:40.159158159
+result_image (4).png::HueSaturation::78.0 83.0::2023-12-25T16:57:42.417300167
+download.jpeg::HueSaturation::78.0 83.0::2023-12-25T16:58:07.242307929
+download.jpeg::HueSaturation::78.0 70.0::2023-12-25T16:58:10.008079077
+download.jpeg::HueSaturation::78.0 53.0::2023-12-25T16:58:11.794365906
+download.jpeg::HueSaturation::78.0 24.0::2023-12-25T16:58:13.454373882
+download.jpeg::HueSaturation::78.0 4.0::2023-12-25T16:58:15.026668398
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 4.0::2023-12-25T16:58:49.633672744
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 20.0::2023-12-25T16:58:51.912433585
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 82.0::2023-12-25T16:58:53.733049240
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 57.0::2023-12-25T16:58:56.763701580
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 71.0::2023-12-25T16:58:59.372826818
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 43.0::2023-12-25T16:59:42.041730851
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 55.0::2023-12-25T16:59:44.340775155
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 60.0::2023-12-25T16:59:51.344737225
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 68.0::2023-12-25T16:59:55.234998341
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 75.0::2023-12-25T17:00:03.701922426
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 75.0::2023-12-25T17:01:36.670259857
+daylily-flower-and-buds-80.jpg::HueSaturation::78.0 49.0::2023-12-25T17:01:39.246659
+daylily-flower-and-buds-80.jpg::HueSaturation::58.0 49.0::2023-12-25T17:01:41.598546672
+download.jpg::Rotation::90::2023-12-25T17:36:29.217847541
+download.jpg::Rotation::180::2023-12-25T17:36:31.769983985
+download.jpg::Rotation::270::2023-12-25T17:36:33.416824828
+download.jpg::Brightness::100.0::2023-12-25T17:38:48.687890691
+download.jpg::Brightness::67.0::2023-12-25T17:38:51.379065041
+download.jpg::Brightness::200.0::2023-12-25T17:38:53.000125299
+download.jpg::Brightness::146.0::2023-12-25T17:38:55.856423218
+download.jpg::Brightness::90.0::2023-12-25T17:38:57.120647583
+download.jpg::Brightness::33.0::2023-12-25T17:38:59.035309258
+download.jpg::HueSaturation::0.0 100.0::2023-12-25T17:39:09.092632815
+download.jpg::HueSaturation::0.0 80.0::2023-12-25T17:39:11.162466602
+download.jpg::HueSaturation::0.0 57.0::2023-12-25T17:39:13.160760697
+download.jpg::HueSaturation::0.0 30.0::2023-12-25T17:39:15.387715439
+download.jpg::HueSaturation::42.0 30.0::2023-12-25T17:39:17.981240920
+daylily-flower-and-buds-80.jpg::HueSaturation::42.0 30.0::2023-12-25T17:39:26.171608515
+daylily-flower-and-buds-80.jpg::HueSaturation::42.0 75.0::2023-12-25T17:39:28.018595701
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 75.0::2023-12-25T17:39:30.404308604
+daylily-flower-and-buds-80.jpg::HueSaturation::21.0 75.0::2023-12-25T17:39:51.673130766
+daylily-flower-and-buds-80.jpg::HueSaturation::33.0 75.0::2023-12-25T17:39:55.684809493
+daylily-flower-and-buds-80.jpg::HueSaturation::50.0 75.0::2023-12-25T17:39:57.896398695
+daylily-flower-and-buds-80.jpg::HueSaturation::60.0 75.0::2023-12-25T17:40:00.606759402
+daylily-flower-and-buds-80.jpg::HueSaturation::76.0 75.0::2023-12-25T17:40:06.655566580
+daylily-flower-and-buds-80.jpg::HueSaturation::93.0 75.0::2023-12-25T17:40:19.824306038
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 75.0::2023-12-25T17:40:22.263367851
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 60.0::2023-12-25T17:40:25.335597994
+download.jpg::Contrast::100.0::2023-12-25T17:40:45.883348309
+download.jpg::GaussianBlur::10.0::2023-12-25T17:41:26.782396700
+download.jpg::GaussianBlur::49.0::2023-12-25T17:41:31.478380265
+download.jpg::Sharpen::50.0::2023-12-25T17:41:42.873143023
+download.jpg::Sharpen::28.0::2023-12-25T17:41:47.850952649
+download.jpg::Sharpen::16.0::2023-12-25T17:41:51.483264974
+download.jpg::Sharpen::83.0::2023-12-25T17:41:59.361788514
+download.jpg::Sharpen::83.0::2023-12-25T17:42:23.718913717
+download.jpg::GrayScale::None::2023-12-25T17:42:33.039500206
+download.jpg::Sepia::None::2023-12-25T17:42:55.529738910
+download.jpg::Invert::None::2023-12-25T17:43:10.697473121
+download.jpg::DominantColour::None::2023-12-25T17:43:29.602699802
+dog.jpg::HueSaturation::0.0 0.0::2023-12-25T20:51:25.023358997
+dog.jpg::HueSaturation::0.0 0.0::2023-12-25T20:52:56.904295655
+dog.jpg::HueSaturation::45.0 0.0::2023-12-25T20:53:08.469063602
+dog.jpg::HueSaturation::16.0 0.0::2023-12-25T20:53:13.791495652
+daylily-flower-and-buds-80.jpg::HueSaturation::16.0 0.0::2023-12-25T20:53:47.159342865
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 0.0::2023-12-25T20:53:50.533014363
+daylily-flower-and-buds-80.jpg::HueSaturation::59.0 0.0::2023-12-25T20:53:52.805715531
+daylily-flower-and-buds-80.jpg::HueSaturation::46.0 0.0::2023-12-25T20:53:55.309139877
+daylily-flower-and-buds-80.jpg::HueSaturation::79.0 0.0::2023-12-25T20:53:57.666649119
+daylily-flower-and-buds-80.jpg::HueSaturation::79.0 0.0::2023-12-25T21:01:11.649290526
+daylily-flower-and-buds-80.jpg::HueSaturation::54.0 0.0::2023-12-25T21:01:15.884688052
+daylily-flower-and-buds-80.jpg::HueSaturation::27.0 0.0::2023-12-25T21:01:18.464168696
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 0.0::2023-12-25T21:01:20.952577859
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 45.0::2023-12-25T21:01:24.960683289
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 72.0::2023-12-25T21:01:28.445701817
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 0.0::2023-12-25T21:01:30.643462988
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 0.0::2023-12-25T21:04:16.778383232
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 0.0::2023-12-25T21:04:19.656570431
+daylily-flower-and-buds-80.jpg::HueSaturation::43.0 0.0::2023-12-25T21:04:21.718308309
+daylily-flower-and-buds-80.jpg::HueSaturation::77.0 0.0::2023-12-25T21:04:24.465728809
+daylily-flower-and-buds-80.jpg::HueSaturation::57.0 0.0::2023-12-25T21:04:29.289999177
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-25T22:46:48.080705629
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-25T22:48:54.206658313
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-25T22:48:54.206658443
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-25T22:50:56.926493856
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 29.0::2023-12-25T22:51:04.414190636
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 52.0::2023-12-25T22:51:06.259691712
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 73.0::2023-12-25T22:51:08.064092970
+daylily-flower-and-buds-80.jpg::HueSaturation::16.0 73.0::2023-12-25T22:51:09.942491698
+daylily-flower-and-buds-80.jpg::HueSaturation::16.0 98.0::2023-12-25T22:51:12.112794607
+daylily-flower-and-buds-80.jpg::HueSaturation::33.0 76.0::2023-12-25T22:51:18.371848465
+daylily-flower-and-buds-80.jpg::HueSaturation::33.0 76.0::2023-12-25T22:51:18.912739329
+daylily-flower-and-buds-80.jpg::HueSaturation::58.0 76.0::2023-12-25T22:51:20.617724911
+daylily-flower-and-buds-80.jpg::HueSaturation::79.0 76.0::2023-12-25T22:51:23.465253639
+daylily-flower-and-buds-80.jpg::HueSaturation::90.0 76.0::2023-12-25T22:51:25.781382734
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 76.0::2023-12-25T22:51:27.765506297
+daylily-flower-and-buds-80.jpg::HueSaturation::70.0 76.0::2023-12-25T22:51:35.350866264
+daylily-flower-and-buds-80.jpg::HueSaturation::42.0 76.0::2023-12-25T22:51:37.992664606
+daylily-flower-and-buds-80.jpg::HueSaturation::2.0 76.0::2023-12-25T22:51:40.263489750
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 76.0::2023-12-25T22:51:42.172479602
+result_image (5).png::HueSaturation::0.0 100.0::2023-12-25T22:52:00.613959059
+result_image (5).png::HueSaturation::0.0 87.0::2023-12-25T22:52:06.680767830
+result_image (5).png::HueSaturation::0.0 67.0::2023-12-25T22:52:11.183548098
+result_image (5).png::HueSaturation::0.0 67.0::2023-12-25T22:52:14.095779959
+result_image (5).png::HueSaturation::0.0 87.0::2023-12-25T22:52:16.125991384
+result_image (5).png::HueSaturation::0.0 100.0::2023-12-25T22:52:21.782734446
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-26T11:44:54.088352702
+daylily-flower-and-buds-80.jpg::HueSaturation::20.0 100.0::2023-12-26T11:44:59.170423486
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 100.0::2023-12-26T11:45:03.065677857
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 100.0::2023-12-26T11:45:12.577989065
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 0.0::2023-12-26T11:45:14.500633070
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 0.0::2023-12-26T11:46:56.916405772
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 0.0::2023-12-26T11:47:02.211142166
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 100.0::2023-12-26T11:47:06.574549917
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 100.0::2023-12-26T11:47:07.113170879
+daylily-flower-and-buds-80.jpg::HueSaturation::100.0 100.0::2023-12-26T11:48:48.846241991
+daylily-flower-and-buds-80.jpg::HueSaturation::68.0 100.0::2023-12-26T11:48:54.500319788
+daylily-flower-and-buds-80.jpg::HueSaturation::40.0 100.0::2023-12-26T11:48:57.078252145
+daylily-flower-and-buds-80.jpg::HueSaturation::5.0 100.0::2023-12-26T11:49:01.076676940
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-26T11:49:04.421875934
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 57.0::2023-12-26T11:49:07.649530764
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 67.0::2023-12-26T11:49:10.571010510
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 67.0::2023-12-26T11:49:10.836220589
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 91.0::2023-12-26T11:49:15.616878509
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 91.0::2023-12-26T11:52:54.526316939
+daylily-flower-and-buds-80.jpg::HueSaturation::40.0 100.0::2023-12-26T11:52:59.303644003
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 100.0::2023-12-26T11:53:01.597687155
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 100.0::2023-12-26T11:53:54.248769079
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 74.0::2023-12-26T11:53:56.731117006
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 38.0::2023-12-26T11:53:58.662735962
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 38.0::2023-12-26T11:53:59.748818828
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 11.0::2023-12-26T11:54:01.643131074
+daylily-flower-and-buds-80.jpg::HueSaturation::87.0 100.0::2023-12-26T11:54:04.666255959
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-26T11:54:07.091901067
+daylily-flower-and-buds-80.jpg::HueSaturation::11.0 100.0::2023-12-26T11:54:11.386331431
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-26T11:54:13.574031735
+daylily-flower-and-buds-80.jpg::HueSaturation::0.0 100.0::2023-12-26T11:55:15.357178154
+daylily-flower-and-buds-80.jpg::HueSaturation::28.0 100.0::2023-12-26T11:55:20.459121406
+daylily-flower-and-buds-80.jpg::HueSaturation::48.0 100.0::2023-12-26T11:55:23.102486275
+daylily-flower-and-buds-80.jpg::HueSaturation::77.0 100.0::2023-12-26T11:55:25.790321018
+daylily-flower-and-buds-80.jpg::HueSaturation::95.0 100.0::2023-12-26T11:55:28.574869185
+test_ultimate1.jpg::HueSaturation::95.0 100.0::2023-12-26T11:55:49.819102622
+test_ultimate1.jpg::HueSaturation::61.0 100.0::2023-12-26T11:55:57.367512784
+download.jpg::HueSaturation::61.0 100.0::2023-12-26T11:56:06.593267674
+download.jpg::HueSaturation::32.0 100.0::2023-12-26T11:56:15.454594555
+images.jpg::HueSaturation::32.0 100.0::2023-12-26T11:56:23.019798314
+images.jpg::HueSaturation::46.0 100.0::2023-12-26T11:56:26.152560601
+images.jpg::HueSaturation::70.0 100.0::2023-12-26T11:56:28.570250049
+images.jpg::HueSaturation::97.0 100.0::2023-12-26T11:56:30.796785556
+images.jpg::HueSaturation::100.0 100.0::2023-12-26T11:56:33.444652508
+images.jpg::HueSaturation::0.0 100.0::2023-12-26T11:56:35.388152676
+images.jpg::HueSaturation::13.0 100.0::2023-12-26T11:56:37.309449086
+images.jpg::HueSaturation::24.0 100.0::2023-12-26T11:56:39.115551400
+images.jpg::HueSaturation::38.0 100.0::2023-12-26T11:56:41.693931609
+images.jpg::HueSaturation::67.0 100.0::2023-12-26T11:56:43.392452503
+images.jpg::HueSaturation::84.0 100.0::2023-12-26T11:56:45.081315959
+images.jpg::HueSaturation::84.0 100.0::2023-12-26T11:58:34.087328899
+images.jpg::HueSaturation::97.0 100.0::2023-12-26T11:58:40.709284993
+images.jpg::HueSaturation::100.0 100.0::2023-12-26T11:58:43.150284546
+images.jpg::HueSaturation::0.0 100.0::2023-12-26T11:58:46.334273832
+images.jpg::HueSaturation::11.0 100.0::2023-12-26T11:58:48.095367588
+images.jpg::HueSaturation::31.0 100.0::2023-12-26T11:58:49.991047327
+images.jpg::HueSaturation::52.0 100.0::2023-12-26T11:58:52.434556075
+images.jpg::HueSaturation::72.0 100.0::2023-12-26T11:58:54.643917442
+images.jpg::HueSaturation::72.0 16.0::2023-12-26T12:23:22.855256094
+images.jpg::HueSaturation::72.0 48.0::2023-12-26T12:23:24.804134694
+images.jpg::HueSaturation::72.0 0.0::2023-12-26T12:23:27.972212593
+images.jpg::HueSaturation::86.0 0.0::2023-12-26T12:23:33.765300340
+images.jpg::HueSaturation::100.0 0.0::2023-12-26T12:23:36.514751952
+images.jpg::HueSaturation::0.0 0.0::2023-12-26T12:23:39.526052132
+images.jpg::HueSaturation::21.0 0.0::2023-12-26T12:23:41.777870152
+images.jpg::HueSaturation::46.0 0.0::2023-12-26T12:23:44.110356418
+images.jpg::HueSaturation::60.0 0.0::2023-12-26T12:23:46.852279638
+download.jpg::GaussianBlur::10.0::2023-12-26T12:51:23.021318949
+download.jpg::GaussianBlur::27.0::2023-12-26T12:51:25.601156633
+download.jpg::GaussianBlur::43.0::2023-12-26T12:51:27.715353660
