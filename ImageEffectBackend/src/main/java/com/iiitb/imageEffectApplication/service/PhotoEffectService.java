@@ -174,8 +174,8 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
-            GrayscaleImplementation gsc = new GrayscaleImplementation();
-            Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService);
+            GrayscaleImplementation gsc = new GrayscaleImplementation();// create a gsc object(to use it's methods)
+            Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService);//use the apply method and pass the loggingService
             
             // ACTUAL WORK ENDS HERE
 
