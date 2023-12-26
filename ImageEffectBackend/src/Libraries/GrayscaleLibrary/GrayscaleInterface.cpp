@@ -1,5 +1,5 @@
 #include "com_iiitb_imageEffectApplication_libraryInterfaces_GrayscaleInterface.h"
-#include "Grayscale.h"
+#include "Grayscale.h" // include grayscale.h so that grayscaleconvert function can be used
 #include "../Pixel.h"
 #include <vector>
 using namespace std;
@@ -55,7 +55,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_iiitb_imageEffectApplication_libraryInte
 
     // Call the function here
     // TODO
-    imageVector = grayscaleconvert(imageVector);
+    imageVector = grayscaleconvert(imageVector);// call the grayscaleconvert function
 
 
 
