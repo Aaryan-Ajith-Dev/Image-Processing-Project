@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-void applyInvertEffect(vector<vector<Pixel>>&ImageVector){
+void applyInvertEffect(vector<vector<Pixel>>&ImageVector){//inverts by subtracting each rgb value from 255
     int n=ImageVector.size();
     int m=ImageVector[0].size();
     for(int i=0;i<n;i++){

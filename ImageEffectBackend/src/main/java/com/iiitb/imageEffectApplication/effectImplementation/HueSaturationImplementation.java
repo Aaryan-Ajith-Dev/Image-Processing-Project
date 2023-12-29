@@ -8,7 +8,7 @@ import com.iiitb.imageEffectApplication.service.LoggingService;
 public class HueSaturationImplementation implements ParameterizableEffect {
     private float hueAmount;
     private float saturationAmount;
-    public void setParameter(String paramName,float value) throws IllegalParameterException{
+    public void setParameter(String paramName,float value) throws IllegalParameterException{//setting the parameter and also taking care of illegal parameter exception
         if((!paramName.equals("Hue") && !paramName.equals("Saturation"))|| value<0 || value>200){
             throw new IllegalParameterException("Illegal paramter for HueSaturation effect");
         }
@@ -19,8 +19,8 @@ public class HueSaturationImplementation implements ParameterizableEffect {
             this.saturationAmount=value;
         }
     }
-    public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService){
-        loggingService.addLog(fileName, "HueSaturation", Float.toString(hueAmount)+" "+Float.toString(saturationAmount));
+    public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService){//applying the effect
+        loggingService.addLog(fileName, "HueSaturation", Float.toString(hueAmount)+" "+Float.toString(saturationAmount));//adding to log
         return HueSaturationInterface.applyHueSaturation(image, saturationAmount, hueAmount);
     }
     

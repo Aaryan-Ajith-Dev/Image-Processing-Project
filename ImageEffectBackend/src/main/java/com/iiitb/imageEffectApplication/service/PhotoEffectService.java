@@ -29,7 +29,7 @@ public class PhotoEffectService {
 
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and setting the required parameters and then applying the effect
             HueSaturationImplementation hueSaturationImplementation=new HueSaturationImplementation();
             hueSaturationImplementation.setParameter("Hue", hueAmount);
             hueSaturationImplementation.setParameter("Saturation", saturationAmount);
@@ -44,6 +44,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch(IllegalParameterException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -56,7 +57,7 @@ public class PhotoEffectService {
             String imageName = imageFile.getOriginalFilename();
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and setting the required parameters and then applying the effect
             BrightnessImplementation brightnessImplementation=new BrightnessImplementation();
 
             brightnessImplementation.setParameterValue(amount);
@@ -70,6 +71,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch (IllegalParameterException e)
         {
             System.out.println("Illegal parameter for Brightness Effect");
@@ -87,9 +89,11 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            // Create ContrastImplementation object and set the parameter value
             ContrastImplementation contrastImplementation = new ContrastImplementation();
             contrastImplementation.setParameterValue(amount);
 
+            // Call the apply method to apply contrast effect
             Pixel[][] modifiedImage = contrastImplementation.apply(inputImage, imageName, loggingService);
 
             // ACTUAL WORK ENDS HERE
@@ -100,7 +104,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
+        //catching illegal parameter exception
         catch (IllegalParameterException e)
         {
             System.out.println("Illegal parameter for Contrast Effect");
@@ -118,7 +122,7 @@ public class PhotoEffectService {
 
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and setting the required parameters and then applying the effect
             FlipImplementation flipImplementation=new FlipImplementation();
             flipImplementation.selectOptionValue("verticalFlipValue", verticalFlipValue);
             flipImplementation.selectOptionValue("horizontalFlipValue", horizontalFlipValue);
@@ -132,6 +136,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch(IllegalParameterException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -145,7 +150,7 @@ public class PhotoEffectService {
 
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and setting the required parameters and then applying the effect
             GaussianBlurImplementation gaussianBlurImplementation =new GaussianBlurImplementation();
             gaussianBlurImplementation.setParameterValue(radius);
             Pixel[][] modifiedImage = gaussianBlurImplementation.apply(inputImage, imageName, loggingService);
@@ -158,6 +163,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch(IllegalParameterException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -172,8 +178,8 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
-            GrayscaleImplementation gsc = new GrayscaleImplementation();
-            Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService);
+            GrayscaleImplementation gsc = new GrayscaleImplementation();// create a gsc object(to use it's methods)
+            Pixel[][] modifiedImage = gsc.apply(inputImage, imageName, loggingService);//use the apply method and pass the loggingService
             
             // ACTUAL WORK ENDS HERE
 
@@ -191,7 +197,7 @@ public class PhotoEffectService {
             String imageName = imageFile.getOriginalFilename();
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and then applying the effect
             InvertImplementation invertImplementation=new InvertImplementation();
             Pixel[][] modifiedImage = invertImplementation.apply(inputImage, imageName, loggingService);
 
@@ -212,6 +218,7 @@ public class PhotoEffectService {
 
 
             // ACTUAL WORK STARTS HERE
+            //creating the object and setting the required parameters and then applying the effect
             RotationImplementation rotationImplementation=new RotationImplementation();
             rotationImplementation.setParameterValue(value);
             Pixel[][] modifiedImage = rotationImplementation.apply(inputImage, imageName, loggingService); 
@@ -225,6 +232,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch(IllegalParameterException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -237,7 +245,7 @@ public class PhotoEffectService {
             String imageName = imageFile.getOriginalFilename();
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object  and then applying the effect
             SepiaImplementation sepiaImplementation=new SepiaImplementation();
             Pixel[][] modifiedImage = sepiaImplementation.apply(inputImage, imageName, loggingService); 
 
@@ -257,7 +265,7 @@ public class PhotoEffectService {
             String imageName = imageFile.getOriginalFilename();
 
             // ACTUAL WORK STARTS HERE
-
+            //creating the object and setting the required parameters and then applying the effect
             SharpenImplementation sharpenImplementation=new SharpenImplementation();
             sharpenImplementation.setParameterValue(amount);
             Pixel[][] modifiedImage = sharpenImplementation.apply(inputImage, imageName, loggingService);
@@ -270,6 +278,7 @@ public class PhotoEffectService {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        //catching illegal parameter exception
         catch(IllegalParameterException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -283,7 +292,10 @@ public class PhotoEffectService {
 
             // ACTUAL WORK STARTS HERE
 
+            // Create DominantColourImplementation object
             DominantColourImplementation dominantColourImplementation=new DominantColourImplementation();
+            
+            // Modified image
             Pixel[][] modifiedImage = dominantColourImplementation.apply(inputImage, imageName, loggingService); 
 
             // ACTUAL WORK ENDS HERE

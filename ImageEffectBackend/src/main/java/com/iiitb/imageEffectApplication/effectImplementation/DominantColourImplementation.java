@@ -6,9 +6,15 @@ import com.iiitb.imageEffectApplication.libraryInterfaces.DominantColourInterfac
 import com.iiitb.imageEffectApplication.service.LoggingService;
 
 public class DominantColourImplementation implements PhotoEffect{
-    public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService){
-        image = DominantColourInterface.applyDominantColour(image);
+    
+    // Apply the effect
+    public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService loggingService)
+    {
+        image = DominantColourInterface.applyDominantColour(image); // Modified image
+
+        // Add log for the effect
         loggingService.addLog(fileName, "DominantColour", "None");
-        return image;
+        
+        return image; // Return the modified image
     }   
 }
