@@ -1,8 +1,8 @@
 The project is about implementing parts of an image processing web-app.
 The features implemented in this project are as follows:
 1. Brightness
-2. Contrast
-3. DominantColour
+2. Contrast - Kandarp Dave (IMT2022115)
+3. DominantColour - Kandarp Dave (IMT2022115)
 4. Flip - Shreyas S (IMT2022078)
 5. Gaussian Blur
 6. Grayscale - Prateek Rath (IMT2022017)
@@ -12,10 +12,11 @@ The features implemented in this project are as follows:
 10. Sepia
 11. Sharpen
 -- Threading - Prateek Rath (IMT2022017)
+-- LoggingService - Kandarp Dave (IMT2022115)
 
-Note: The exact algorithms or descriptions of the cpp files are written as comments within them. This readMe just provides an overview of various parts of the project.
+Note: The exact algorithms or descriptions of the cpp files are written as comments within them. This README just provides an overview of various parts of the project.
 
-Most of the work is done in the ImageEffectBackend/Src Directory. 
+Most of the work is done in the ImageEffectBackend/src Directory. 
 There are 3 directories under the src directory
 
 1. The libraries directory:
@@ -38,7 +39,7 @@ This directory has interfaces that are to be implemented by classes in the Effec
 b. libraryInterfaces:
 This directory has interfaces that contain apply functions declared as static and native. These functions are actually defined in the libraries deirectory in c++.
 
-c. EffectImplementation:
+c. effectImplementation:
 This directory has files of the form <feature_name>Implementation.java. Each file has a class that defines the apply method and implements a class from the baseEffects directory.
 Let us take a specific example to understand this better. The ContrastImplementation.java file has the ContrastImplementation class which implements the SingleValueParameterizableEffect. 
 The class defines the apply method which makes use of the static applyContrast method defined in the ContrastInterface.java file in the libraryInterfaces directory.
