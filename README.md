@@ -3,11 +3,11 @@ The features implemented in this project are as follows:
 1. Brightness
 2. Contrast
 3. DominantColour
-4. Flip
+4. Flip - Shreyas S (IMT2022078)
 5. Gaussian Blur
 6. Grayscale - Prateek Rath (IMT2022017)
 7. HueSaturation
-8. Invert
+8. Invert - Shreyas S (IMT2022078)
 9. Rotation
 10. Sepia
 11. Sharpen
