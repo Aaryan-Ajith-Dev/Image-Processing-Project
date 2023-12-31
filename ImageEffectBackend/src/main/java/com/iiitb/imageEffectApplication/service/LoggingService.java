@@ -13,6 +13,9 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
+// The file logfile.txt is used to keep track of all the logs.
+// It is stored in the directory ImageEffectBackend/
+
 @Service
 public class LoggingService {
 
