@@ -4,13 +4,13 @@ The features implemented in this project are as follows:
 2. Contrast - Kandarp Dave (IMT2022115)
 3. DominantColour - Kandarp Dave (IMT2022115)
 4. Flip - Shreyas S (IMT2022078)
-5. Gaussian Blur
+5. Gaussian Blur - Aaryan Ajith Dev (IMT2022038)
 6. Grayscale - Prateek Rath (IMT2022017)
-7. HueSaturation
+7. HueSaturation - Aaryan Ajith Dev (IMT2022038)
 8. Invert - Shreyas S (IMT2022078)
 9. Rotation - Ananthakrishna K(IMT2022086)
 10. Sepia - Ananthakrishna K(IMT2022086)
-11. Sharpen
+11. Sharpen - Aaryan Ajith Dev (IMT2022038)
 -- Threading - Prateek Rath (IMT2022017)
 -- LoggingService - Kandarp Dave (IMT2022115)
 
