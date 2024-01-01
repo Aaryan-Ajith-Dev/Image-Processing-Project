@@ -52,3 +52,24 @@ The PhotoEffectService.java file has a PhotoEffectService class. It has methods 
 In each of these methods, we have added lines of code in the "todo" section that assign the modified pixels to the modified image matrix using the 
 corresponding apply methods defined in the EffectImplementation directory.
 
+To setup the project, follow these steps:
+
+1. In the root directory, run the command
+   npm i
+
+2. In the ImageEffectFrontend directory, run the command
+   npm i
+
+3. Start the frontend with the command "npm start" in the ImageEffectFrontend directory.
+
+4. Go to the ImageEffectBackend directory and run the following commands:
+   i. make clean
+   ii. make
+   iii. mvn clean package
+
+   Please note that maven needs to be installed. After the last command, a target folder should be created.
+
+5. To start the backend, run the command
+   java -jar target/imageEffectApplication-0.0.1-SNAPSHOT.jar
+
+6. The website can be accessed at localhost:4200.
