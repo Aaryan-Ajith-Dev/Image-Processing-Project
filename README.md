@@ -1,6 +1,6 @@
 The project is about implementing parts of an image processing web-app.
 The features implemented in this project are as follows:
-1. Brightness
+1. Brightness - Ananthakrishna K(IMT2022086)
 2. Contrast - Kandarp Dave (IMT2022115)
 3. DominantColour - Kandarp Dave (IMT2022115)
 4. Flip - Shreyas S (IMT2022078)
@@ -8,8 +8,8 @@ The features implemented in this project are as follows:
 6. Grayscale - Prateek Rath (IMT2022017)
 7. HueSaturation
 8. Invert - Shreyas S (IMT2022078)
-9. Rotation
-10. Sepia
+9. Rotation - Ananthakrishna K(IMT2022086)
+10. Sepia - Ananthakrishna K(IMT2022086)
 11. Sharpen
 -- Threading - Prateek Rath (IMT2022017)
 -- LoggingService - Kandarp Dave (IMT2022115)
