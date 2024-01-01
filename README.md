@@ -10,8 +10,8 @@ The features implemented in this project are as follows:
 8. Invert - Shreyas S (IMT2022078)
 9. Rotation - Ananthakrishna K(IMT2022086)
 10. Sepia - Ananthakrishna K(IMT2022086)
-11. Sharpen - Aaryan Ajith Dev (IMT2022038)
--- Threading - Prateek Rath (IMT2022017)
+11. Sharpen - Aaryan Ajith Dev (IMT2022038) <br />
+-- Threading - Prateek Rath (IMT2022017) <br />
 -- LoggingService - Kandarp Dave (IMT2022115)
 
 Note: The exact algorithms or descriptions of the cpp files are written as comments within them. This README just provides an overview of various parts of the project.
