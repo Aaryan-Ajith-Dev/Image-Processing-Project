@@ -1,3 +1,4 @@
+##About
 The project is about implementing parts of an image-processing web app.
 The features implemented in this project are as follows:
 1. Brightness - Ananthakrishna K(IMT2022086)
@@ -15,8 +16,9 @@ The features implemented in this project are as follows:
 -- LoggingService - Kandarp Dave (IMT2022115) <br />
 -- EffectImplementaion (all except GrayScale and Contrast) - Shreyas S (IMT2022078) <br />
 
-Note: The exact algorithms or descriptions of the cpp files are written as comments within them. This README just provides an overview of various parts of the project.
+*Note: The exact algorithms or descriptions of the cpp files are written as comments within them. This README just provides an overview of various parts of the project.*
 
+#Funcitonality
 Most of the work is done in the ImageEffectBackend/src Directory. 
 There are 3 directories under the src directory
 
@@ -52,6 +54,7 @@ The PhotoEffectService.java file has a PhotoEffectService class. It has methods 
 In each of these methods, we have added lines of code in the "todo" section that assign the modified pixels to the modified image matrix using the 
 corresponding apply methods defined in the EffectImplementation directory.
 
+##Setup
 To setup the project, follow these steps:
 
 1. In the root directory, run the command:
