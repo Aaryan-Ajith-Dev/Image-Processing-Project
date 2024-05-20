@@ -6,17 +6,17 @@
         <h2>About</h2>
         <p>The project is about implementing parts of an image-processing web app. Below are the features implemented:</p>
         <ol>
-            <li>Brightness - Ananthakrishna K (IMT2022086)</li>
-            <li>Contrast - Kandarp Dave (IMT2022115)</li>
-            <li>Dominant Colour - Kandarp Dave (IMT2022115)</li>
-            <li>Flip - Shreyas S (IMT2022078)</li>
-            <li>Gaussian Blur - Aaryan Ajith Dev (IMT2022038)</li>
-            <li>Grayscale - Prateek Rath (IMT2022017)</li>
-            <li>Hue Saturation - Aaryan Ajith Dev (IMT2022038)</li>
-            <li>Invert - Shreyas S (IMT2022078)</li>
-            <li>Rotation - Ananthakrishna K (IMT2022086)</li>
-            <li>Sepia - Ananthakrishna K (IMT2022086)</li>
-            <li>Sharpen - Aaryan Ajith Dev (IMT2022038)</li>
+            <li>Brightness - Ananthakrishna K</li>
+            <li>Contrast - Kandarp Dave</li>
+            <li>Dominant Colour - Kandarp Dave</li>
+            <li>Flip - Shreyas S</li>
+            <li>Gaussian Blur - Aaryan Ajith Dev</li>
+            <li>Grayscale - Prateek Rath</li>
+            <li>Hue Saturation - Aaryan Ajith Dev</li>
+            <li>Invert - Shreyas S </li>
+            <li>Rotation - Ananthakrishna K</li>
+            <li>Sepia - Ananthakrishna K </li>
+            <li>Sharpen - Aaryan Ajith Dev</li>
         </ol>
         <p>Note: The exact algorithms or descriptions of the CPP files are written as comments within them. This README provides an overview of various parts of the project.</p>
     </section>
